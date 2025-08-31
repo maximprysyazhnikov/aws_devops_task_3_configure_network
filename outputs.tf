@@ -1,9 +1,9 @@
 output "subnet_id" {
-    description = "ID of the VPC subnet, deployed by the module"
-    value       = ""
+  description = "ID of grafana subnet"
+  value       = aws_subnet.grafana.id
 }
 
 output "security_group_id" {
-    description = "ID of the security group, deployed by the module"
-    value       = ""
+  description = "ID of the grafana security group"
+  value       = aws_security_group.grafana_sg.id
 }
